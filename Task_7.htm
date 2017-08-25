@@ -1,0 +1,704 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>任务七：实现常见的技术产品官网的页面架构及样式布局</title>
+ <style type="text/css">
+   *{
+	  margin:0;
+	  padding:0;
+	  font-family:"微软雅黑"; 
+	   }
+   #wrap{
+	   width:1280px;
+	   }
+	header{
+		height:57px;
+		padding:0 44px;
+		}
+	header nav{
+		float:right;
+		margin:14px 23px;
+		}
+	nav ul{
+		height:57px;
+		display:flex;
+		list-style:none;
+		font-size:14px;
+		}
+    nav a{
+		color:#999;
+		text-decoration:none;
+		padding:14px 23px;
+		}
+	nav a:hover{
+		color:#f00;
+		font-weight:bold;
+		border-bottom:3px solid #f00;
+		}
+	nav span{
+		color:#f00;
+		font-weight:bold;
+		padding-left:5px;
+		}
+	nav img{
+		vertical-align:top;
+		}
+	header>img{
+		float:left;
+		padding:11px 0 0 12px;
+		}
+	header h3{
+		font-size:21px;
+		padding:14px 0 0 56px;
+		}
+	#intro .start{
+		width:1165px;
+		height:467px;
+		background:url('lib/3.jpg') no-repeat top left;
+		opacity:0.8;
+		color:white;
+		padding:223px 0 0 115px;
+	  }
+	.start h1{
+		font-size:60px;
+		font-weight:400;
+		letter-spacing:0.2rem;
+		word-spacing:2%;
+		}
+	.start p{
+		width:300px;
+		font-size:21px;
+		font-weight:lighter;
+		padding:0 9px;
+		margin:14px 0;
+		line-height:1.5em;
+	   }
+	 .start a{
+	    display:inline-block;
+		width:340px;
+		color:white;
+		text-decoration:none; 
+	   }
+	  .start h4{
+		 background:#f00;
+		 font-size:32px;
+		 font-weight:lighter;
+		 text-align:center;
+		 padding:9px 5px 9px 0;
+		 margin:47px 0 0 14px; 
+		  }
+	.target{
+		padding:25px 0 47px;
+	}
+	.target ul{
+		display:flex;
+		list-style:none;
+	  }
+	 .target ul:first-child li{
+		 width:320px;
+	    }
+	 .target img{
+		 text-align:center;
+		 margin-top:12px;
+		 margin-left:136px;
+	 }
+	 .target ul:last-child li{
+		 width:318.5px;
+		 border-right:2px solid grey;
+		 }
+	  .target ul:last-child li:last-child{
+		  border:none;
+		  }
+	  .target p{
+		  width:160px;
+		  height:52px;
+		  color:grey;
+		  font-size:14px;
+		  text-align:center;
+		  margin-left:85px;
+		  vertical-align:top;
+		  }
+  <!----------section2   ----------->
+	 #activity.title {
+         background-color:#f0f;
+         width:300px;
+         height: 360px;
+         text-align: center;
+         }
+		 .title img{
+			 margin:80px 4px 0 500px;
+		 }
+		.title h1{
+			color:grey;
+			font-size:53px;
+			font-weight:lighter;
+			margin-top:22px;
+			text-align:center;	 
+			 }
+		.search{
+	    width:1280px;
+		height:300px;
+		background:url('lib/9.jpg') no-repeat top left;
+		color:white;
+		padding:20px 0px;
+		text-align:center;
+			}
+	   .search h3{
+		   font-size:21px;
+		   font-weight:lighter;
+		   margin:29px 0px 0 0;
+		   } 
+		.search h3:after{
+			content:" ";
+			border-top:2px solid white;
+			display:block;
+			width:30px;
+			position:relative;
+			left:50%;
+			margin:7px 0 0 -16px;
+			}
+		.search h5{
+		   font-size:12px;
+		   font-weight:lighter;
+		   margin:17px 0 40px  0;
+		   }
+		 .search form input{
+			 width:225px;
+			 height:35px;
+			 font-size:14px;
+			 border:none;
+			 margin:10px 13px;
+			 padding-left:10px;
+			 }
+		.search form input[type="submit"]{
+			background-color:#f00;
+			}
+/*  ----  section 2.3  */
+        .city{
+			background-color:#f9f9f9;
+			width:100%;
+			height:606px;
+			}
+		.city ul{
+			list-style:none;
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:center;
+			}
+		.city ul li{
+			margin:100.5px 18.5px;
+			text-align:center;
+			}	
+	     .city img{
+			background-color:white;
+			width:202px;
+			height:312px;
+			border:1px solid #d9d9d9;
+			padding:11px 7px; 
+			 }
+		.city h4{
+			font-size:14px;
+			margin-top:8px;
+			}
+		.city p{
+			font-size:12px;
+			color:grey;
+			margin:5px 0px;
+			}
+		.city h4.sh{
+			font-size:22px;
+			margin:0 10px;
+			text-align:justify;
+			height:25px;
+			text-align-last:justify;
+			overflow:hidden;
+			}
+	/* ----- section3 -------*/
+	   #detail ul.fir{
+		   list-style:none;
+		   text-align:center;
+		   display:flex;
+		   }
+	   ul.fir li:first-child{
+		   background:url('lib/3.jpg')no-repeat top left;
+		   width:850px;
+		   height:364px;
+		   color:white;
+		   font-size:22px;
+		   padding:122px 0 79px;
+		   }
+	   ul.fir li:first-child h2{
+	     font-size:50px;
+		 font-weight:lighter;
+	   }
+	     ul.fir li:first-child h1{
+		  font-size:140px;
+		 font-weight:500;
+		 line-height:105px;
+		 letter-spacing:10px;
+		 }
+		 ul.fir li:first-child p{
+		  width:160px;
+		display:inline-block;
+		line-height:1.75em;
+		margin-top:45px;
+		
+		 }
+	   ul.fir li:last-child {
+		   width:300px;
+		   height:365px;
+		   padding:100px 65px;
+	   }
+        ul.fir li:last-child h4{
+		  color:#333;
+		  font-size:20px;
+		  margin:30px 5px 12px 0;
+		}
+		 ul.fir li:last-child span{
+		  color:#f00;
+		}
+		 ul.fir li:last-child p{
+		  color:#a9a9a9;
+		  font-size:12px;
+		 line-height:30px;
+		 text-align:left;
+		 padding:5px 0 0 7px;
+		}
+	    ul.fir li:last-child a{
+		  color:rgba(255,0,0,0.7);
+		  font-size:12px;
+		  display:inline-block;
+		  text-decoration:none;
+		  border:1px solid #f00;
+		  padding:7px 28px;
+		 margin:41px 0 0 2px;
+		}
+		 ul.fir div span{
+		  width:10px;
+		  height:10px;
+		  border:1px solid grey;
+		  border-radius:10px;
+		  display:inline-block;
+		  text-align:center;
+		  margin:25px 6px; 
+		}
+		ul.fir li:last-child:before{
+		  content:"";
+		  border-color:transparent white;
+		  border-style:solid;
+		  border-width:1em 1.5em 1em 0em;
+		  display:block;
+		  height:0;
+		  width:0;
+		  position:relative;
+		  left:-89px;
+		  top:168px;
+		}
+	 ul.sec{
+		text-align:center;
+		 list-style:none;
+		 display:flex;
+		 }
+	 ul.sec li.more{
+		 width:205px;
+		 height:220px;
+		 padding:150px 110px;
+		 }
+     ul.sec li.more:first-child{
+	  background-color:rgba(210,0,0,0.7);
+	  color:white;
+	   }
+	  ul.sec li.more p{
+	    font-size:20px;
+		margin-top:19px;
+		line-height:1.5em;
+	   }
+	   ul.sec li.more p:after{
+		 content:" ";
+		 display:block;
+		 border-top:2px solid grey;
+		 width:30px;
+		 position:relative;
+		 left:50%;
+		 margin:18px 0 0 -15px;
+			}
+		 ul.sec li.more:first-child p:after{
+		   border-color:white;	 
+			 }
+	 ul.sec li.more a{
+		 color:rgba(255,0,0,0.7);
+		 font-size:20px;
+		 text-decoration:none;
+		 display:inline-block;
+		 border:1px solid rgba(255,0,0,0.7);
+		 margin-top:25px;
+		 padding:7px 40px 5px;
+		 }
+     ul.sec li.more:first-child a{ 
+	    color:white;
+		border:1px solid white;
+	 
+	   }
+	 ul.sec li:last-child {
+    /* bottom right */
+    width: 430px;
+    height: 520px;
+    background: url('lib/12.jpg') no-repeat left center;
+   }
+	ul.sec li:last-child:before {
+    content: "";
+    border-color: transparent white;
+    border-style: solid;
+    border-width: 1em 0 1em 1.5em;
+    display: block;
+    height: 0;
+    width: 0;
+    position: relative;
+    top: 50%;
+    margin-top: -16px;
+}
+   #join{
+	  height:550px;
+	  padding:100px;  
+	   }
+   #join .title{
+	   text-align:center;
+	   margin:14px 0 60px;
+	   }
+	#join .title h3{
+		font-size:21px;
+		font-weight:normal;
+		}
+	 #join .title h3:after{
+		 content:" ";
+		 border-top:2px solid rgba(255,0,0,0.7);
+		 position:relative;
+		 width:30px;
+		 display:block;
+		 left:50%;
+		 margin:5px 0 0 -15px;
+		 
+		 }
+	  #join .title p{
+	     color:#b9b9b9;
+		 font-size:12px;
+		 margin-top:13px;
+	  }
+	  #join .form{
+		width:670px;
+		float:right;
+		margin:37px 16px;  
+		  }
+	  #join .form input[type="text"]{
+		  width:295px;
+		  height:40px;
+		  background-color:#e9e9e9;
+		  font-size:14px;
+		  border:none;
+		  padding-left:15px;
+		  margin:7px;
+		  }
+	  #join .form textarea {
+    width: 630px;
+    height: 110px;
+    background-color: #e9e9e9;
+    font-size: 14px;
+    border: none;
+    padding: 10px 0 0 15px;
+    margin: 7px;
+}
+		#join .form input[type="submit"]{
+			width:644px;
+			height:40px;
+			background-color:#e9e9e9;
+			font-size:16px;
+			text-align:center;
+			border:none;
+			margin:7px;
+			}
+	   #join .policy{
+		   width:320px;
+		   height:320px;
+		   color:grey;margin-top:95px;
+		   padding-left:38px;
+		   }
+		.policy div{
+			margin:22px 0 38px;
+			padding:10px 30px 0 0;
+			}
+		.policy h4{
+			font-size:14px;			
+			}
+		.policy p{
+			font-size:12px;
+			margin-top:22px;
+			line-height:1.75em;
+			}
+	/*   --- footer-----*/
+	   footer .contact{
+		  height:260px;
+		  background-color:rgba(10,10,20,0.8);
+		  color:white;
+		  text-align:center;
+		  padding:50px 0;   
+		   }
+		.contact h2{
+			font-size:20px;
+			font-weight:lighter;
+			margin-top:5px;
+			}
+		.contact p{
+			font-size:12px;
+			margin-top:5px;
+			}
+		.contact form{
+			margin-top:28px;
+			display:inle-block;
+			}
+		.contact form input[type="text"]{
+			width:420px;
+			height:40px;
+			 color:#d9d9d9;
+			font-size:15px;
+			border:none;
+			padding-left:10px;
+			}
+	    .contact form input[type="submit"]{
+			width:80px;
+			height:40px;
+			background-color:rgba(100,100,100,0.9);
+			color:white;
+			font-size:16px;
+			border:none;
+			margin:1px 0 0 -4px;
+			}
+		.contact ul{
+			display:flex;
+			justify-content:center;
+			list-style:none;
+			margin-top:32px;
+			}
+		.contact ul li{
+			margin:0 9px;
+			}
+	/* ---- last line  -----*/
+	    footer section:last-child{
+			height:36px;
+			background-color:rgba(0,0,10,0.8);
+			color:white;
+			padding:20px 20px 0;
+			}
+	    footer section:last-child a{
+			font-size:11px;
+			text-decoration:none;
+			color:white;
+			float:right;
+			margin:11px 20px 0 0;
+			}
+		 footer section:last-child p{
+		     font-size:11px;
+			 margin:8px 0 0 75px;
+		  }
+ </style>
+</head>
+
+<body>
+  <div id="wrap">
+  <header>
+  <nav>
+     <ul>
+       <li><a href="#">首页</a></li>
+       <li><a href="#">最新活动</a></li>
+       <li><a href="#">项目介绍</a></li>
+       <li><a href="#">爱心社区</a></li>
+       <li><a href="#">关于我们</a></li>
+       <li><a href="#"><img src="lib/2.jpg" alt="login" /><span>登录</span></a></li>
+     </ul>
+  
+  </nav>
+   <img src="lib/1.jpg" alt="login" />
+   <h3>新世界</h3>
+  </header>
+  <!--------------main主要内容 -------->
+  <div id="main">
+    <section id="intro">
+     <div class="start">
+       
+        <h1>Time of new life</h1>
+         <p>新时代，年轻的人们让我们一起体验新生活，享受新生活</p>
+         <a href="#"><h4>开始体验</h4></a>
+     </div>
+    <div class="target">
+      <ul>
+        <li><img src="lib/4.jpg" alt="target1"/></li>
+        <li><img src="lib/5.jpg" alt="target2"/></li>
+        <li><img src="lib/6.jpg" alt="target3"/></li>
+        <li><img src="lib/7.jpg" alt="target4"/></li>
+      </ul>
+      <ul>
+         <li><p>打造全新世界观，让你更爱你的生活</p></li>
+         <li><p>丰富多彩的公益生活，发挥新世界的主人公意识</p></li>
+         <li><p>时尚的新理念，超前体验未知的生活</p></li>
+         <li><p>完善的培养机制，培养你全新的世界观</p></li>
+      </ul>
+    </div> 
+    </section>
+    <section id="activity">
+      <div class="title">
+        <img src="lib/8.jpg" alt="logo"/>
+        <h1>关于新世界，你不知道的还有什么？</h1>
+      </div>
+     <div class="search">
+       <h3>查找新世界城市活动信息</h3>
+       <h5>每个城市都有不同的活动信息，请自主查询您所需要了解的城市</h5>
+       <form>
+         <input list="nation" name="country" placeholder="中国" />
+         <datalist id="nation">
+            <option check="checked">中国</option>
+             <option>美国</option>
+             <option>新加坡</option>
+         </datalist>
+         <input list="prov" name="province" placeholder="省份" />
+         <datalist id="prov">
+            <option check="checked">北京市</option>
+             <option>天津市</option>
+             <option>陕西省</option>
+             <option>山东省</option>
+             <option>甘肃省</option>
+         </datalist>
+          <input list="city" name="city" placeholder="城市" />
+         <datalist id="city">
+            <option check="checked">北京市</option>
+             <option>天津市</option>
+             <option>西安市</option>
+             <option>青岛市</option>
+             <option>兰州市</option>
+         </datalist>
+          <input type="submit"  value="搜  索" />
+       </form>
+       </div>
+     <div class="city">
+       <ul>
+          <li>
+          <img src="lib/10.jpg"/ alt="painting">
+            <h4>北京活动</h4>
+            <p>新社区大联盟</p>
+          </li>
+          <li>
+          
+            <h4 class="sh">上海活动</h4>
+            <p>夜上海新景观探索</p>
+            <img src="lib/11.jpg"/ alt="painting">
+          </li>
+          <li>
+          <img src="lib/12.jpg"/ alt="painting">
+            <h4>深圳活动</h4>
+            <p>全新海岸线观点站</p>
+          </li>
+          <li>
+          <img src="lib/13.jpg"/ alt="painting">
+            <h4>香港活动</h4>
+            <p>奢侈消费大配送</p>
+          </li>
+       </ul>
+     </div>
+     
+    </section>
+    <section id="detail">
+      <ul class="fir">
+        <li>
+          <h2>新世界</h2>
+          <h1>Time</h1>
+          <p>新世界 - 北京 2016.04.01</p>
+        </li>
+        <li>
+          <h4>新世界 /<span>01</span></h4>
+          <p>新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界 </p>
+          <a href="#">更多详情</a>
+          <div><span style="background-color:grey"> </span><span></span><span></span></div>
+        </li>
+      </ul>
+      <ul class="sec">
+         <li class="more">
+           <p>新时代<br />关于爱生活的我们</p>
+           <a href="#">查看更多</a>
+        </li>
+        <li class="more">
+           <p>新时代<br />关于爱生活的我们</p>
+           <a href="#">查看更多</a>
+           </li>
+           <li>
+        </li>
+      </ul>
+    </section>
+    <section id="join">
+       <div class="title">
+        <h3>成为我们的志愿者</h3>
+        <p>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情<br />
+        那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+      </div>
+     <div class="form">
+       <form>
+          <input type="text" name="name" placeholder="姓名:" />
+          <input type="text" name="age" placeholder="年龄:" />
+          <input type="text" name="phonenum" placeholder="联系方式:" />
+          <input type="text" name="address" placeholder="联系地址:" />
+          <textarea name="dreamlife" placeholder="请简单描述你的梦想："></textarea>
+          <input type="submit" value="提交申请" />
+       </form>
+     </div>
+     <div class="policy">
+       <div>
+         <h4>新世界志愿者协议</h4>
+         <p>加入新世界志愿者的人员必须遵守中华人民共和国的相关法律法规，并且本着平等自愿的原则 . . . . . .</p>
+       </div>
+        <div>
+         <h4>新世界志愿者权利</h4>
+         <p>新世界志愿者享受新世界内部所有资源共享的权力，并且享受所在市新世界活动的优先参与资格</p>
+       </div>
+       <div>
+         <h4>更多条款</h4>
+       </div>
+       
+     </div>
+    </section>
+    <footer>
+      <section class="contact">
+        <h2>联系我们</h2>
+        <p>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯
+             <br />也可以通过以下任何方式关注我们动态</p>
+     
+       <form>
+          <input type="text" name="email" placeholder="someone@email.com" />
+          <input type="submit" value="提 交" />
+       </form>
+       <ul>
+         <a href="www.tencent.com" target="_blank">
+         <li><img src="lib/14.jpg" alt="qq" /></li>
+         </a>
+         <a href="www.weibo.com" target="_blank">
+         <li><img src="lib/15.jpg" alt="weibo" /></li>
+         </a>
+         <a href="www.twitter.com" target="_blank">
+         <li><img src="lib/16.jpg" alt="twitter" /></li>
+         </a>
+         <a href="www.facebook.com" target="_blank">
+         <li><img src="lib/17.jpg" alt="earth" /></li>
+         </a>
+       </ul>
+        </section>
+        <section>
+          <a href="#">Back to top</a>
+          <p> &copy;2016新世界</p>
+        </section>
+    </footer>
+    
+    
+  </div>
+  
+  
+  </div>
+</body>
+</html>
